@@ -54,6 +54,7 @@ function getCardBySingleParams(arr, val, param){
     }
     let final = arr.filter((item) => {
         return item[param] === val; 
+        // Refactor
     });
     
     return final;
@@ -65,6 +66,7 @@ function getCardMultipleParams(arr, val, param){
     }
     let final = arr.filter((item) => {
         return (typeof(val) == 'object' ? (JSON.stringify(item.colors) === JSON.stringify(val)) : (item.colors == val));
+        // Refactor
     });
     
     return final;
