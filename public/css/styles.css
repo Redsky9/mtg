@@ -1,0 +1,219 @@
+/* BODY */
+
+body {
+    background: #000000 url('../images/background.png') no-repeat top center;
+}
+
+;
+.outer {
+    position: relative;
+    overflow: auto;
+    top: 50%;
+    width: 100%;
+    height: 35rem;
+    height: 100%;
+    background: #404040;
+    border: 2px solid #F5F5F5;
+    border-radius: 10px;
+}
+
+.container-body {
+    padding-top: 20%;
+}
+
+
+/* CARD ITEM */
+
+.cards {
+    text-align: center;
+    overflow: hidden;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    align-content: flex-end;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    /* Or do it all in one line with flex flow */
+    -webkit-flex-flow: row wrap;
+    /* tweak the where items line up on the row */
+    /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+    -webkit-align-content: flex-end;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.card-item {
+    width: 18em;
+    background: #D8D8D8;
+    height: 100%;
+    margin: 20px;
+    border: 2px solid royalblue;
+    border-radius: 10px;
+}
+
+.card-img>img {
+    width: 90%;
+    border-radius: 10px;
+}
+
+.card-header {
+    height: 3em!important;
+}
+
+@media (max-width: 576px) {
+    .outer {
+        position: relative;
+        overflow: auto;
+        top: 13%;
+        width: 100%;
+        height: 35rem;
+        height: 100%;
+        background: #787878;
+    }
+}
+
+.inner {
+    background: #A9A9A9;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+
+/* HEADER */
+nav {
+    background: rgba(72, 72, 72, 0.9);
+    color: white;
+}
+
+nav a {
+    color: white;
+}
+
+.navbarfull {
+    width: 100%;
+}
+
+a:hover {
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+.pos-f-t {
+    margin-top: 69px!important;
+    width: 100%;
+}
+
+#navbarToggleExternalContent {
+    border-bottom: 1px dotted gray;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: rgba(72, 72, 72, 0.9);
+}
+
+.arrow-menu {
+    font-size: 25px;
+    width: 0;
+    top: -28px;
+    left: 50%;
+    background: transparent;
+}
+
+.colorItem {
+    width: 17px;
+    height: 17px;
+}
+
+.p-4 {
+    width: 100%;
+    display: table;
+    padding: 0!important;
+    padding-top: 5px!important;
+    height: 16rem!important;
+}
+
+.p-4 li {
+    float: left;
+    color: white;
+}
+
+.option-list>li {
+    width: 16%;
+}
+
+.menu-item-header {
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.menu-item-body {
+    margin-top: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-item-body ul {
+    padding: 0;
+    padding-left: 12%;
+}
+
+.colours ul li {
+    margin-left: 5px;
+}
+
+.colours ul li input {
+    margin-top: 10px;
+    margin-left: 3px;
+}
+
+.type ul li input {
+    margin-top: 10px;
+    margin-left: 3px;
+}
+
+.type ul li {
+    width: 87%;
+}
+
+.menu-item-body ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item-body ul li ul {
+    padding: 0;
+}
+
+.rarity ul li {
+    width: 86%;
+}
+
+.sets {
+    width: 97%;
+}
+
+.link-list{
+    flex-direction: row;
+}
+
+.link-list>li{
+    padding-left: 15px;
+}
+
+.input-group-btn{
+    color: black;
+}
+
+.card-link{
+    padding-top: 10px;
+}
