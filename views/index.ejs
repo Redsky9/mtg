@@ -4,12 +4,10 @@
     <div class="row justify-content-md-center">
         <div class="col-md">
             <div class="outer">
-                <div class="inner">
-                    <div class="cards">
-                        <% for(let item in cards){ %>
-                            <%- include('components/card-item', {card: cards[item]}); %>
-                        <% } %>
-                    </div>
+                <div class="cards">
+                    <% for(let item in cards){ %>
+                        <%- include('components/card-item', {card: cards[item]}); %>
+                    <% } %>
                 </div>
             </div>
         </div>
