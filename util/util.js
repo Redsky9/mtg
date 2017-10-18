@@ -1,7 +1,11 @@
+let fs = require('fs');
+let bP = require('body-parser');
 let allCards = require('../assets/json/AllCards.json');
 let allSets = require('../assets/json/AllSets.json');
 
 let sets = [];
+
+// app.use(bP.urlencoded({extended: true}));
 
 function getAllSets(){
     
@@ -130,6 +134,17 @@ function getCardByValue(arr, val, name){
     return final;
 }
 
+function getAllCardNames(){
+    let temp = [];
+    for(let i = 0; i < allCards.length; i++){ 
+        temp.push(allCards[i].name);
+    };
+    console.log(temp);
+    fs.writeFile('./assets/json/allCardNames.json', JSON.stringify(temp, null, 2), 'utf8', (err) => {
+        if(err) throw err;
+    });
+}
+
 module.exports = {
     getAllSets: getAllSets,
     findCards: findCards,
@@ -138,5 +153,6 @@ module.exports = {
     getCardByColor: getCardByColor,
     getCardByRarity: getCardByRarity,
     getCardByType: getCardByType,
-    getCardByValue: getCardByValue
+    getCardByValue: getCardByValue,
+    getAllCardNames
 }
