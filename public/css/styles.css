@@ -363,6 +363,14 @@ ul {
       font-style: italic; 
   }
 
+  .mtgprice {
+      color: black;
+  }
+
+  .mtgprice:hover {
+    color: black;
+}
+
 
   
 
