@@ -7,11 +7,12 @@
                 <div class="cards">
                     <% for(let item in cards){ %>
                         <%- include('components/card-item', {card: cards[item]}); %>
-                    <% } %>
+                        <% } %>
+                    </div>
                 </div>
             </div>
         </div>
-      </div>
+        <%- include('components/pagination', {}); %>
 </div>
 
 <% include components/footer.ejs %>

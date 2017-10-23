@@ -41,6 +41,15 @@ function findCards(values){
     return finalVal;
 }
 
+function getCardById(val){
+
+    let final = allCards.filter((item) => {
+        return item.editions[0].multiverse_id == val
+    });
+
+    return final;
+}
+
 function getCardByName(arr, val){
     if(arr.length == 0){
         arr = allCards;
@@ -145,9 +154,11 @@ function getAllCardNames(){
     });
 }
 
+
 module.exports = {
     getAllSets: getAllSets,
     findCards: findCards,
+    getCardById: getCardById,
     getCardByName: getCardByName,
     getCardBySet: getCardBySet,
     getCardByColor: getCardByColor,
